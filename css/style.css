@@ -868,7 +868,7 @@ a.icon-secondary-filled:hover svg {
 .btn-icon-right .icon-md {
   width: 80px;
   height: 80px;
-  line-height: 80px;
+  line-height: 90px;
   font-size: 44px;
 }
 .icon-lg,
@@ -16847,13 +16847,13 @@ a.pswp__share--download:hover {
 .mdi-light.mdi-inactive {
   color: rgba(255, 255, 255, 0.3);
 }
-@font-face {
+/*@font-face {
   font-family: "material-design";
   src: url("../fonts/material-design.eot");
   src: url("../fonts/material-design.eot#iefix") format("embedded-opentype"), url("../fonts/material-design.woff") format("woff"), url("../fonts/material-design.ttf") format("truetype"), url("../fonts/material-design.svg") format("svg");
   font-weight: normal;
   font-style: normal;
-}
+}*/
 .material-design-ico,
 [class^="breadcrumb-title-"]:before,
 [class*=" material-design-"]:before,
