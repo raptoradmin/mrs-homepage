@@ -47,34 +47,16 @@
 	}
 	a, a:hover, a:focus {
 		display: inline-block;
-		color: #0047ab;
+		color: #1c97fd;
 	}
 	amp-carousel img {
 		object-fit: cover;
 	}
 
-	hr.node {
-		position: relative;
-		height: 2px;
-		border: 0;
-		background: #ddd;
-		color: #ddd;
-		margin: 10px 20px;
-	}
-	hr.node:before, hr.node:after {
-		position: absolute;
-		content: '\26ac';
-		font-size: 24px;
-		top: -20px;
-		color: inherit;
-	}
-	hr.node:before { left: -10px; }
-	hr.node:after { right: -10px; }
-
 	hr.thick {
 		width: 20px;
 		height: 3px;
-		background-color: #0047ab;
+		background-color: #1c97fd;
 		border: none;
 	}
 
@@ -89,22 +71,18 @@
 		color: #3840f7;
 	}
 	.text-white {	color: #fff }
-	.text-muted { color:#6c757d; }
-	.btn {
-		padding: 6px 20px;
-	}
+	.text-muted { color: #6c757d; }
 	.btn-primary {
-		background: #3840f7;
+		background: #1c97fd;
 		border: none;
+		border-radius: 50px;
 		color: white;
 		text-decoration: none;
-		padding: 10px 20px;
+		padding: 12px 25px;
 	}
 	.btn-primary:hover,
 	.btn-primary:focus,
 	.btn-primary:active { background: #2E3086 }
-	.btn-round { border-radius: 18px }
-	.btn-round.btn-lg { border-radius: 21px }
 
 	.bg-primary { background-color: #3840f7 }
 	.bg-white { background-color: #fff }
@@ -121,11 +99,18 @@
 		font-weight: 500;
 	}
 
-	#sect-stats svg {
-		width: 3em;
-		height: 3em;
-	}
 	.card-value { font: bold 52px Montserrat, sans-serif }
+
+	.icon {
+		display: block;
+		width: 50px;
+		height: 50px;
+		font-size: 50px;
+		padding: 20px;
+		border-radius: 50%;
+		color: #fff;
+		background-color: #1c97fd;
+	}
 
 	.sr-only, .invalid-feedback { display: none }
 	input[type='text'], textarea {
@@ -190,7 +175,6 @@
 		<li><a class="nav-link" href="https://blog.raptoritconsultants.com/" title="View the Raptor IT blog">BLOG</a></li>
 	</ul>
 
-		<!-- <div class="px-2 py-1 text-center bg-light" style="border-radius:5px;"> -->
 	<ul class="list-reset flex justify-around bg-light py2 rounded">
 		<li class="nav-item">
 			<a href="https://www.facebook.com/RaptorITNetwork/" target="_blank" title="Visit Raptor IT Consultants on Facebook">
@@ -261,7 +245,7 @@
 	<div class="container p3 text-white">
 		<h4 class="my1">Using our roofing expertise to build the future of our communities</h4>
 		<h2 class="bold">LET US HELP ON YOUR NEXT ROOFING OR GUTTER PROJECT</h2>
-		<a class="btn btn-primary btn-lg btn-round mb-3" href="contacts.html" title="Roofing &amp; gutter company, Placerville, CA Roofer">Contact Us</a>
+		<a class="btn-primary mb-3" href="contacts.html" title="Roofing &amp; gutter company, Placerville, CA Roofer">Contact Us</a>
 	</div>
 </section>
 
@@ -270,7 +254,7 @@
 		<h4 class="center">Roofing and gutter service you can rely on!</h4>
 		<h2 class="center bold">PROFESSIONAL ROOFING &amp; GUTTER SERVICES</h2>
 		<p>Mountain Roofing Systems takes pride in delivering superior roofing products and services at competitive rates in Placerville, Camino, Shingle Springs, Folsom, El Dorado Hills, South Lake Tahoe, El Dorado, Sacramento, Placer, and Amador Counties. Our roofers strive to offer every customer: high-quality roofing materials, a vast selection of roof repair &amp; re- roofing options, prompt & reliable service, convenient scheduling, and the most efficient turnaround possible on your roof or gutter project. Offering more than 37 years of roofing experience, our goal is building a reliable roof over your business &amp; home, so you can protect your families investments with satisfaction guaranteed on every roof. Give Mountain Roofing Systems a call today for quality roof repair, re-roofing, and gutter services near you.</p>
-		<a class="btn-primary btn-round my2" href="history.html">Learn more</a>
+		<a class="btn-primary my2" href="history.html">Learn more</a>
 		<amp-img src="images/Actual/Home/professional-roofing-and-gutters.webp" width="16" height="10" layout="responsive" alt="Mountain Roofing Systems staff"></amp-img>
 	</div>
 </section>
@@ -304,73 +288,109 @@
 	</div>
 </section>
 
-<!-- SERVICES -->
-<section id="sect-featurettes" class="mb3">
-	<div class="container px2">
-		
-		<!-- <h2 class="text-center">Our Services</h2> -->
-		<div class="mx-auto center">
-			<h2>Reliable IT services whenever you need them.</h2>
-			<p>We’re here whenever you need IT support. Think of how much your business could benefit from having IT consulting experts on-call. Raptor IT Consultants Professional services provides industry experts to design and implement best-practice processes that are tailored to your specific needs.</p>
+<section class="section-large bg-default">
+	<div class="px2">
+		<h4 class="">Why choose mountain roofing systems for your next roofing project?</h4>
+		<h2 class="bold">NOT JUST A ROOF OVER YOUR HEAD</h2>
+
+		<div class="my3">
+			<span class="icon mx-auto"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg></span>
+			<h3 class="">Dependable Roofers</h3>
+			<p class="">When you hire Mountain Roofing Systems for your upcoming roof or gutter project you&#39;re guaranteed a quality roofing experience because we set the highest standards for roofing safety and customer service. Our skilled roofers have more than 37 years of experience providing roofing and gutter services, with comprehensive knowledge including: waterproofing systems replacement, emergency roof repair applications, and thorough evaluation for diagnosing roof or gutter "cause of failure" conditions on any commercial or residential building. Through ongoing roof and ladder safety training and sourcing quality roofing materials, our skilled roofers will exceed your expectations when you choose Mountain Roofing Systems. Let our roofers show you why we’re the bes
 		</div>
 
-		<div class="pb1">
-			<div class="orbit-container">
-				<!-- <img class="orbit-image d-block" src="{{ static('img/blank.webp') }}" lazy-src="{{ static('img/feat-it-support.svg') }}" alt="IT support graphic"> -->
-				<amp-img class="orbit-image" layout="fill" src="{{ static('img/feat-it-support.svg') }}" width="300" height="300" alt="IT Supportgraphic"></amp-img>
-				<!-- <img class="orbit-spinner" src="{{ static('img/blank.webp') }}" lazy-src="{{ static('img/spinner.svg') }}"> -->
-				<amp-img class="orbit-spinner" src="{{ static('img/spinner.svg') }}" width="300" height="300" layout="fill"></amp-img>
-			</div>
-			<h3 class="">IT Support</h3>
-			<p class="text-muted">Leverage our dedicated IT consultants to diagnose and repair any technology issue your business encounters. Our experienced IT consulting team routinely works on projects of varying difficulties for organizations large and small, no issue is too complex. Regularly certifying in new IT service & support technologies and processes as they become available, let our professional IT consultants be your managed IT services & dedicated IT support provider.</p>
-			<a class="btn btn-primary btn-round" href="{{ url('splash:srv_itsupport') }}" title="Learn more about our IT support">Learn More</a>
+		<div class="my3">
+			<span class="icon mx-auto"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/></svg></span>
+			<h3 class="">Your roofing experience</h3>
+			<p class="">Leave it to the professionals at Mountain roofing Systems for all your roofing repair, roof replacement, and gutter installation needs at competitive rates and with satisfaction guaranteed on every roofing project. Our team strives to deliver a unique roofing experience on every roof and gutter by offering comprehensive knowledge on zoning laws and building permit regulations to guide you in selecting the best solution for your roof repair, roof replacement, or gutter installation needs. You can rely on our roofers because we guarantee our work on every roof repair, roof replacement, or gutter installation for five years and go out of our way to make sure your roof or gutter is built to last. Give Mountain Roofing Systems a call to find out how you can add a professional touch to your family&#39;s investment with our quality roofing and gutter services.</p>
 		</div>
 
-		<hr class="node">
-
-		<div class="pb1">
-			<div class="orbit-container">
-				<amp-img class="orbit-image" layout="fill" src="{{ static('img/feat-managed-it.svg') }}" width="300" height="300" alt="IT Supportgraphic"></amp-img>
-				<amp-img class="orbit-spinner" src="{{ static('img/spinner.svg') }}" width="300" height="300" layout="fill"></amp-img>
-			</div>
-			<h3 class="">Managed IT Services</h3>
-			<p class="text-muted">IT service issues happen in and out of the office all the time, slowing employees down, and ultimately costing your business money. Don’t wait for things to build up or choose between performance and cost. There is a better way and it costs less than you’re already paying for break/fix IT support. Raptor IT Consultants specializes in tailoring managed IT services to scale for on-premises, hybrid on-premises/cloud, and full cloud business network models at competitive rates.</p>
-			<a class="btn btn-primary btn-round" href="{{ url('splash:srv_managedit') }}" title="Learn more about our managed IT services">Learn More</a>
-		</div>
-
-		<hr class="node">
-
-		<div class="pb1">
-			<div class="orbit-container">
-				<amp-img class="orbit-image" layout="fill" src="{{ static('img/feat-web-development.svg') }}" width="300" height="300" alt="IT Supportgraphic"></amp-img>
-				<amp-img class="orbit-spinner" src="{{ static('img/spinner.svg') }}" width="300" height="300" layout="fill"></amp-img>
-			</div>
-			<h3 class="">Website Development</h3>
-			<p class="text-muted">Raptor IT Consultants is an all inclusive IT services provider in Sacramento, California. We'll design a professional website that sets your business apart from the competition and brings your ideas to life in a global market. By combining the latest strategies in web development and SEO markup, our web design experts create stylish and responsive websites that increase exposure online. Offering security, built-in SEO, social media integration, and custom data solutions, Raptor IT Consultants will enhance your organizations ability to deliver a unique experience at affordable rates, all with expert IT support at your disposal.</p>
-			<a class="btn btn-primary btn-round" href="{{ url('splash:srv_webdev') }}" title="Learn more about our website development services">Learn More</a>
-		</div>
-
-		<hr class="node">
-
-		<div class="pb1">
-			<div class="orbit-container">
-				<amp-img class="orbit-image" layout="fill" src="{{ static('img/feat-voip.svg') }}" width="300" height="300" alt="IT Supportgraphic"></amp-img>
-				<amp-img class="orbit-spinner" src="{{ static('img/spinner.svg') }}" width="300" height="300" layout="fill"></amp-img>
-			</div>
-			<h3 class="">VoIP (Voice over IP)</h3>
-			<p class="text-muted">When your business communications are bundled, you don’t have to try and make separate products work together and you’re not paying several vendors for a series of different services. Our easy-to-use cloud-based solution is much less expensive to operate than typical on-premises phone systems, and we pass the savings onto you. Setup takes minutes, not days, with a dedicated IT Support Helpdesk specialist to ensure installation goes smoothly. Onsite staff, remote workers, and IT consultants will all have access to the same digital tools they need to use and manage business communications through one platform - anytime, anywhere, on any device.</p>
-			<a class="btn btn-primary btn-round" href="{{ url('splash:srv_voip') }}" title="Learn more about our voice over IP services">Learn More</a>
+		<div class="my3">
+			<span class="icon mx-auto"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z"/><path fill-rule="evenodd" d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/></svg></span>
+			<h3 class="heading">Roof repairs on demand</h3>
+			<p class="content">Whether you&#39;re faced with a leaky roof, loose roofing components, or storm damage, Mountain Roofing Systems is available during or outside of normal business hours to repair your roof and gutters. Our seasoned roofing experts come equipped to handle a variety of emergency roof and gutter repair issues and are trained to make quality roof repairs  effectively and work fast to get your roof repairs done in a timely manner at competitive rates. Mountain Roofing Systems has more than 25 years on the roof and over 37 years of experience making emergency roof repairs and our seasoned roofers are qualified to help resolve all your immediate roofing and gutter service needs with satisfaction guaranteed on every roof or gutter project in Placerville, Camino, Shingle Springs, Folsom, El Dorado Hills, South Lake Tahoe, El Dorado, Sacramento, Placer, and Amador Counties.</p>
 		</div>
 
 	</div>
 </section>
 
-<!-- BANNER 2 -->
-<section id="sect-banner2" class="my3" style="background: url({{ static('img/jumbotron2.webp') }}) center/cover">
-	<div class="container p3">
-		<h2 class="m0">Why <b>Raptor</b>? We make <b>IT</b> easy!</h2>
-		<p>Download the comprehensive guide we use to offer your business affordable managed IT services with unlimited access to a dedicated IT support helpdesk, manned by experienced IT consultants you can rely on.</p>
-		<a class="btn btn-primary btn-lg btn-round mb-3" href="https://raptorwebhost-my.sharepoint.com/:b:/g/personal/adam_raptorit_net/EdmrPkh3aYZJohF9LXsA5VgBRGAUN8jPkfV33fDyUC1bAQ?e=LVZDox" target="_blank" title="Learn about all-you-can-eat IT support">All-You-Can-Eat IT Support</a>
+<section style="background: url(images/Actual/Home/header1.jpg) center/cover fixed">
+	<div class="container p3 text-white">
+		<h4 class="my1">Quality roofing and gutter services at competitive rates</h4>
+		<h2 class="bold">SATISFACTION ON EVERY ROOF AND GUTTER PROJECT GUARENTEED!</h2>
+		<a class="btn-primary mb-3" href="contacts.html" title="Roofing &amp; gutter company, Placerville, CA Roofer">Contact Us</a>
+	</div>
+</section>
+
+<section>
+	<div class="px2">
+		<h4 class="">Unmatched quality craftsmanship and materials on every roofing project guaranteed!</h4>
+		<h2 class="">Dependable emergency roofing repair service</h2>
+
+		<div class="my3">
+			<amp-img src="images/Actual/Home/col1_commercial_residential_roof_repair.jpg" width="16" height="10" layout="responsive" alt="roof repair, commercial roofing, roofers in Placerville, Amador, El Dorado, Placer, and Sacramento Counties"></amp-img>
+			<p class="content">Negligence on the roof can result in toxic mold, structural problems, and even costly interior damage! Has your building&#39;s roof sustained extensive weather-related damage? Is your building&#39;s roof old, worn out, or not up to code? If the answer to either question is yes, then you’ll need a reliable roof repair company, and fast. Mountain Roofing Systems provides quality commercial and residential roofing services in Amador County, El Dorado County, Placer County, and Sacramento County.</p>
+		</div>
+
+		<div class="my3">
+			<amp-img src="images/Actual/Home/col2_commercial_residential_roof_repair.jpg" width="16" height="10" layout="responsive" alt="shingle roof, residential roofing, commercial roofing, roofers in Placerville, Amador, El Dorado, Placer, and Sacramento Counties"></amp-img>
+			<p class="content">When you need commercial or residential roofing services, trust the team at Mountain Roofing Systems to complete your next roofing project within your budget, because our experienced roofing experts approach every roofing project with precision, care, and dedication to exceeding our customers&#39; expectations. No matter the scope of your next commercial or residential roof repair, roof replacement, or gutter project, our reliable roofing team pledges to work quickly and efficiently to ensure the job gets done right the first time.</p>
+		</div>
+
+		<div class="my3">
+			<amp-img src="images/Actual/Home/col3_commercial_residential_roof_repair.jpg" width="16" height="10" layout="responsive" alt="roof &amp; gutter, residential roofing, commercial roofing, roofers in Placerville, Amador, El Dorado, Placer, and Sacramento Counties"></amp-img>
+			<p class="content">Commercial and residential roof replacements are a significant investment, so don’t trust the job to just anyone! At Mountain Roofing Systems we’re well-versed in zoning laws, and building permit requirements so you can rest assured that your next roof repair, roof replacement, or gutter project will comply with the zoning laws in your county. Turn to Mountain Roofing Systems for unmatched quality and service and get peace of mind on your next commercial or residential roofing or gutter project!</p>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="px2">
+		<h5 class="subheading">Top quality materials and products at a fair price!</h5>
+		<h3 class="heading">Roofing materials Galore</h3>
+	</div>
+	
+	<div class="range range-condensed">
+		<div class="cell-xs-6 cell-sm-4 cell-lg-3">
+			<a title="Composite shingle roofing materials near Placerville, CA" class="thumbnail-project" href="history.html">
+				<img src="images/Actual/Home/footer-shingle.webp" alt="shingle roof, commercial &amp; residential roofing, roofers in Placerville, Amador, El Dorado, Placer, and Sacramento Counties." width="513" height="438"/>
+				<div class="thumbnail-overlay">
+					<h5 class="heading">Composition Shingle</h5>
+					<h6 class="subheading">Environmentally friendly, composite shingles are manufactured partly from recyclable materials (post- industrial plastics, hemp fibers, and used roofing material). Composite shingles can be made in almost any color, shape or size. They are reasonably priced and carry a warranty of 30-50 years.</h6>
+					<div class="divider"></div>
+				</div>
+			</a>
+		</div>
+		<div class="cell-xs-6 cell-sm-4 cell-lg-3">
+			<a title="Concrete tile roofing materials near Placerville, CA" class="thumbnail-project" href="history.html">
+				<img src="images/Actual/Home/footer-concrete.webp" alt="tile re-roof, commercial &amp; residential roofing, roofers in Placerville, Amador, El Dorado, Placer, and Sacramento Counties." width="513" height="438"/>
+				<div class="thumbnail-overlay">
+					<h5 class="heading">Concrete Tile</h5>
+					<h6 class="subheading">Durable, cost effective, and long-lasting; concrete tile roofs are a smart choice for residential and commercial applications alike. Unlike more porous materials like asphalt, concrete tiles are not susceptible to moisture freezing within the body of the tile along with other qualities that reduce maintenance costs.</h6>
+					<div class="divider"></div>
+				</div>
+			</a>
+		</div>
+		<div class="cell-xs-6 cell-sm-4 cell-lg-3">
+			<a title="Metal roofing materials near Placerville, CA" class="thumbnail-project" href="history.html">
+				<img src="images/Actual/Home/footer-metal.webp" alt="metal roof, residential roofing, roofers in Placerville, Amador, El Dorado, Placer, and Sacramento Counties." width="513" height="438"/>
+				<div class="thumbnail-overlay">
+					<h5 class="heading">Metal Roofing</h5>
+					<h6 class="subheading">Beauty, durability and value. This hard-working material performs in all seasons. Ideal for a variety of structures and designed to improve energy efficiency by reflecting sunlight before it can be absorbed as heat. With a robust variety of colors, it&#39;s an excellent choice for protecting your investment beautifully and affordably.</h6>
+					<div class="divider"></div>
+				</div>
+			</a>
+		</div>
+		<div class="cell-xs-6 cell-sm-4 cell-lg-3">
+			<a title="TPO Membrane roofing materials near Placerville, CA" class="thumbnail-project" href="history.html">
+				<img src="images/Actual/Home/footer-tpo.webp" alt="TPO roof, commercial roofing, roofers in Placerville, Amador, El Dorado, Placer, and Sacramento Counties." width="513" height="438"/>
+				<div class="thumbnail-overlay">
+					<h5 class="heading">TPO Membrane</h5>
+					<h6 class="subheading">UV &amp; heat-resistant and as heat-weldable as PVC; Thermoplasti polyolefin (TPO) roofing membranes are a fast growing commercial roofing product. With increasing demand for heat-reflective and energy efficient roofing systems, TPO provides exceptional resistance to ultraviolet, ozone and chemical exposure.</h6>
+					<div class="divider"></div>
+				</div>
+			</a>
+		</div>
 	</div>
 </section>
 
